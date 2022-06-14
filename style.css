@@ -4,7 +4,7 @@ html{
     margin: 0;
     height: 100vh;
     width: 100%;
-    cursor: url('/cursor.png') 24 24, auto;
+    cursor: url('/cursor.png') 12 12, auto;
 }
 #center{
     text-align: center;
@@ -66,7 +66,7 @@ img{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    cursor: url('/cursor_click.png') 24 24, auto;
+    cursor: url('/cursor_click.png') 12 12, auto;
     width: 30%;
 }
 .button span{
@@ -85,7 +85,7 @@ td{
     font-size: 20px;
 }
 a{
-    cursor: url('/cursor_click.png') 24 24, auto;
+    cursor: url('/cursor_click.png') 12 12, auto;
 }
 .bild{
     width: 30%;
@@ -180,7 +180,7 @@ a{
     padding: 0.8%;
     text-align: center;
     display: inline-block;
-    cursor: url('/cursor_click.png') 24 24, auto;
+    cursor: url('/cursor_click.png') 12 12, auto;
     width: auto;
     text-decoration: none;
     color: white;
