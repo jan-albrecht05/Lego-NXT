@@ -1,0 +1,123 @@
+html{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: url('/cursor.png') 24 24, auto;
+}
+#center{
+    text-align: center;
+}
+#home{
+    width: 4%;
+}
+#icon{
+    text-align: left;
+    padding-left: 5%;
+}
+#home img{
+    min-width: 30px;
+}
+#heading{
+    font-size: 30px;
+    background-color: #ed4a05;
+    vertical-align: top;
+    width: 100%;
+}
+#header{
+    font-size: 30px;
+    vertical-align: top;
+    white-space: nowrap,
+}
+#header_table{
+    border-style: none;
+    width: 90%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#back{
+    text-align: center;
+    font-size: 23px;
+    width: 10%;
+}
+#home img:hover{
+        transform: scale(1.1);
+}
+.back{
+    width: 15%;
+}
+#bild{
+    width: 0%;
+    max-height: auto;
+}
+#text{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 25px;
+}
+#btn{
+    background-color: #e6e6e6;
+    font-size: 25px;
+}
+.button{
+    background-color: #ed4a05;
+    border-radius: 7px;
+    color: white;
+    padding: 3px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: url('/cursor_click.png') 24 24, auto;
+    width: 20%;
+}
+.button span{
+    font-size: 25px;
+    color: white;
+}
+table{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    cursor: url('/cursor_click.png') 24 24, auto;
+}
+td{
+    width: 7,5%;
+    text-align: left;
+    border-radius: none;
+    font-size: 20px;
+}
+tr{
+    width: 100%;
+}
+img{
+    cursor: url('/cursor_click.png') 24 24, auto;
+    width: 100%;
+    height: auto;
+}
+a{
+    color: red;
+    cursor: url('/cursor_click.png') 24 24, auto;
+}
+#img{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#zwischenueberschrift{
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 28%;
+}
+#beschreibung{
+    text-align: left;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 22px;
+}
+.oben{
+    width: 7%;
+}
+details{
+    padding-left: 5%;
+}

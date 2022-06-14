@@ -1,0 +1,194 @@
+html{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: url('/cursor.png') 24 24, auto;
+}
+#center{
+    text-align: center;
+}
+.back{
+    width: 15%;
+}
+#home{
+    width: 4%;
+}
+#home img{
+    min-width: 30px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+#icon{
+    text-align: left;
+    padding-left: 5%;
+}
+#heading{
+    font-size: 30px;
+    background-color: #ed4a05;
+    vertical-align: top;
+    white-space: nowrap,
+}
+#back{
+    text-align: center;
+    font-size: 23px;
+    width: 10%;
+}
+#bild{
+    max-width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#bild img:hover{
+    transform: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#text{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 25px;
+}
+#btn{
+    background-color: #e6e6e6;
+    display: inline-block;
+    font-size: 25px;
+    width: 100%;
+}
+.button{
+    background-color: #ed4a05;
+    border-radius: 7px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: url('/cursor_click.png') 24 24, auto;
+    width: 30%;
+}
+.button span{
+    font-size: 80%;
+    color: white;
+}
+table{
+    width: 100%;
+    color: black;;
+    border: 1px;
+    background-color: black;
+}
+td{
+    text-align: left;
+    background-color: white;
+    font-size: 20px;
+}
+a{
+    cursor: url('/cursor_click.png') 24 24, auto;
+}
+.bild{
+    width: 30%;
+}
+.text{
+    width: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#bauideen-tab{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 25px;
+}
+#bauideen-tab table .text{
+    padding-top: 1px;
+    text-align: top;
+    filter: blur(0px);
+}
+#bauideen-tab table .text:hover{
+    filter: blur(0px);
+}
+#bauideen-tab table .bild{
+    min-width: 40px;
+    background-color: darkgray;
+}
+#produktbild img{
+    width: 50%;
+    height: auto;
+}
+#dubrauchst{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#dubrauchst table{
+    background-color: white;
+    width: 100%;
+}
+.oben{
+    width: 33%;
+}
+#dubrauchst td{
+    text-align: center;
+}
+#dubrauchst img{
+    width: 33%;
+    min-width: 50px;
+    height: auto;
+}
+#textlist{
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 25px;
+}
+#dubrauchst2{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#dubrauchst2 table{
+    background-color: white;
+    width: 100%;
+}
+#dubrauchst2 td{
+    text-align: center;
+}
+#dubrauchst2 img{
+    width: 50%;
+    min-width: 50px;
+    height: auto;
+}
+.oben2{
+    width: 20%;
+    height: auto;
+}
+.text a{
+    color: red;
+}
+#download{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    width: 30%;
+    background-color: red;
+    padding: 1%;
+    border-radius: 15px;
+}
+.dbutton{
+    background-color: red;
+    border-radius: 15px;
+    padding: 0.8%;
+    text-align: center;
+    display: inline-block;
+    cursor: url('/cursor_click.png') 24 24, auto;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+.dbutton:hover{
+    text-decoration: underline;
+}
+.dbutton:active{
+    background-color: black;
+}
