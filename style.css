@@ -1,25 +1,28 @@
 html{
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
     height: 100vh;
     width: 100%;
     cursor: url('/cursor.png') 12 12, auto;
+}
+body{
+    margin: 0;
 }
 #center{
     text-align: center;
 }
 .back{
-    width: 15%;
+    width: 1%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 #home{
     width: 4%;
+    margin-left: 1rem;
+    padding-top: 1rem;
 }
 #home img{
     min-width: 30px;
-}
-img:hover{
-    transform: scale(1.1);
 }
 #icon{
     text-align: left;
@@ -29,7 +32,11 @@ img:hover{
     font-size: 30px;
     background-color: #ed4a05;
     vertical-align: top;
-    white-space: nowrap,
+    padding-bottom: 1rem;
+}
+h2{
+    margin-top: 0;
+    padding-top: .5rem;
 }
 #back{
     text-align: center;
@@ -58,6 +65,7 @@ img{
     display: inline-block;
     font-size: 25px;
     width: 100%;
+    padding: 10px 0px
 }
 .button{
     background-color: #ed4a05;
@@ -89,6 +97,10 @@ a{
 }
 .bild{
     width: 30%;
+}
+.bild:hover img{
+    transform: scale(1.05);
+    transition: all .2s;
 }
 .text{
     width: auto;

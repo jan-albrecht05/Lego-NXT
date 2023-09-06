@@ -6,11 +6,16 @@ html{
     width: 100%;
     cursor: url('/cursor.png') 24 24, auto;
 }
+body{
+    margin: 0;
+}
 #center{
     text-align: center;
 }
 #home{
     width: 4%;
+    padding-top: 1rem;
+    margin-left: 1rem;
 }
 #icon{
     text-align: left;
@@ -24,6 +29,7 @@ html{
     background-color: #ed4a05;
     vertical-align: top;
     width: 100%;
+    padding-bottom: 1rem;
 }
 #header{
     font-size: 30px;
@@ -40,9 +46,8 @@ html{
     text-align: center;
     font-size: 23px;
     width: 10%;
-}
-#home img:hover{
-        transform: scale(1.1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .back{
     width: 15%;
@@ -90,6 +95,10 @@ td{
 }
 tr{
     width: 100%;
+}
+.bild:hover img{
+    transform: scale(1.05);
+    transition: all .2s;
 }
 img{
     cursor: url('/cursor_click.png') 24 24, auto;
