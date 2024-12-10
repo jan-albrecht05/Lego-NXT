@@ -1,0 +1,157 @@
+:root{
+    --orange: #ed4a05;
+    --gray: #262626
+}
+html{
+    scrollbar-width: thin;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#heading{
+    height: 5rem;
+    background-color: var(--orange);
+    filter: drop-shadow(0px 0px 5px var(--gray));
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+#heading span{
+    margin-left: 20%;
+    display: inline-block;
+    padding-top: .5rem;
+    font-size: 280%;
+}
+#mainbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid{
+    width: 92%;
+    margin-top: 2rem;
+    display: grid;
+    grid-gap: 4rem;
+}
+.gridpart{
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    border: solid black 2px;
+    background-color: white;
+    transition: all .3s;
+}
+.gridpart:hover{
+    filter: drop-shadow(0px 0px 10px #313131);
+}
+.gridpart .cover{
+    height: 15rem;
+    overflow: hidden;
+    padding: .2rem
+}
+.gridpart.disabled .cover img{
+    background-image: url('/Präsentation NXT/no-img.png');
+    height: 100%;
+    background-size: cover;
+}
+.gridpart.disabled:hover{
+    filter: none;
+    cursor: not-allowed;
+}
+.gridpart .name{
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: .2rem;
+    border-top: solid black 2px;
+    padding: .2rem;
+}
+.gridpart.disabled .name{
+    filter: blur(5px);
+}
+.gridpart .datum{
+    padding: .2rem;
+    font-size: 120%;
+    margin-bottom: .2rem;
+}
+#pdf-container{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 99.8%;
+    height: 100lvh;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
+}
+#pdf-container #close{
+    display: inline-block;
+    position:fixed;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 400%;
+    font-weight: bold;
+    transform: rotate(45deg);
+}
+#pdf-viewer{
+    width: 90%;
+    height: 100%;
+    margin-inline: 5%;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1500px) {
+    #grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gridpart{
+        width: 100%;
+    }
+    .gridpart .cover{
+        height: 8rem;
+    }
+}
+@media (min-width: 900px) {
+    #grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    #heading span{
+        font-size: 180%;
+        padding-top: .5rem;
+        margin-left: 2rem;
+    }
+    #grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gridpart{
+        width: 100%;
+    }
+    .gridpart .cover{
+        height: 8rem;
+    }
+}
+@media (max-width: 500px) {
+    
+    #grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .gridpart{
+        width: 90%;
+        margin-inline: auto;
+    }
+    .gridpart .cover{
+        height: 10rem;
+    }
+}

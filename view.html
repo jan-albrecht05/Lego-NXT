@@ -1,15 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Reader</title>
+    <title>Präsentationen - Übersicht</title>
+    <link rel="stylesheet" href="/view.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Map of query strings to corresponding PDF files
+            const pdfMap = {
+                "00": "/NXT_User_Guide.pdf",
+                "01": "/Präsentation NXT/1 - Einführung/NXT 2.1 Einführung.pdf",
+                "02": "/Präsentation NXT/2 - Fahren/Fahren.pdf",
+                "03": "/Präsentation NXT/3 - Sound/Sound.pdf",
+                "04": "/Präsentation NXT/4 - Display/Display.pdf",
+                "05": "/Präsentation NXT/5 - Knopf/Knopf.pdf",
+                "06": "/Präsentation NXT/6 - Warten/Warten.pdf",
+                "07": "/Präsentation NXT/7 - Schleife/Schleife.pdf",
+                "08": "/Präsentation NXT/8 - Ultraschall/Ultraschall.pdf",
+                "09": "/Präsentation NXT/9 - IntToStr/IntToStr.pdf",
+                "10": "/Präsentation NXT/10 - Variablen/Variablen.pdf",
+            };
+            // Extract query string manually (everything after '?')
+            const queryString = window.location.search.slice(1); // Removes the `?`
+            const pdfViewer = document.getElementById("pdf-viewer");
+            if (queryString && pdfMap[queryString]) {
+                pdfViewer.src = pdfMap[queryString];
+            }
+            else{
+                document.getElementById("pdf-container").style.display = "none";
+            };
+        });
+    </script>
 </head>
 <body>
-    <div id="main" height="100%">
-        <div id="PDFcontainer" height="100%">
-            <object type="application/pdf" data="/Präsentation/1 - Einführung/NXT 2.1 Einführung.pdf" width="90%" height="780" aspect-ratio="16/9"></object>
+    <div id="main">
+        <div id="heading">
+            <span>Übersicht der Präsentationen</span>
         </div>
+        <div id="mainbody">
+            <div id="grid">
+                <a class="gridpart" href="?00">
+                    <div class="cover">
+                        <img src="/NXT_User_Guide.png">
+                    </div>
+                    <div class="name">
+                        00 - LEGO User Guide
+                    </div>
+                    <div class="datum">
+                        ---
+                    </div>
+                </a>
+                <a class="gridpart" href="?01">
+                    <div class="cover">
+                        <img src="/Präsentation NXT/1 - Einführung/Einführung(Kl.4).png">
+                    </div>
+                    <div class="name">
+                        01 - Einführung
+                    </div>
+                    <div class="datum">
+                        06.12.2024
+                    </div>
+                </a>
+                <a class="gridpart" href="?02">
+                    <div class="cover">
+                        <img src="/Präsentation NXT/2 - Fahren/FahrenBG.png">
+                    </div>
+                    <div class="name">
+                        02 - Fahren
+                    </div>
+                    <div class="datum">
+                        13.12.2024
+                    </div>
+                </a>
+                <a class="gridpart disabled" href="">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        03 - Sound abspielen
+                    </div>
+                    <div class="datum">
+                        20.12.2024
+                    </div>
+                </a>
+                <a class="gridpart disabled" href="">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        04 - Anzeige benutzen
+                    </div>
+                    <div class="datum">
+                        10.01.2025
+                    </div>
+                </a>
+                <a class="gridpart disabled" href="">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        05 - Knopf
+                    </div>
+                    <div class="datum">
+                        17.01.2025
+                    </div>
+                </a>
+                <a class="gridpart disabled" href="">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        06 - Warten
+                    </div>
+                    <div class="datum">
+                        24.01.2025
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="pdf-container">
+        <a href="view.html" id="close">+</a>
+        <!-- The PDF will be displayed here -->
+        <iframe id="pdf-viewer"></iframe>
     </div>
 </body>
 </html>
