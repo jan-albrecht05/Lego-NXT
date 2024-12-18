@@ -97,6 +97,7 @@ a{
 }
 .bild{
     width: 30%;
+    overflow: hidden;
 }
 .bild:hover img{
     transform: scale(1.05);
