@@ -25,6 +25,7 @@ a{
     font-weight: bold;
     position: sticky;
     top: 0;
+    z-index:3;
 }
 #heading span{
     margin-left: 20%;
@@ -50,9 +51,11 @@ a{
     border: solid black 2px;
     background-color: white;
     transition: all .3s;
+    z-index:2;
 }
 .gridpart:hover{
     filter: drop-shadow(0px 0px 10px #313131);
+    z-index:2;
 }
 .gridpart .cover{
     height: 15rem;
