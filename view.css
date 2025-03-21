@@ -25,7 +25,8 @@ a{
     font-weight: bold;
     position: sticky;
     top: 0;
-    z-index:3;
+    padding-bottom: 1rem;
+    z-index: 3 !important;
 }
 #heading span{
     margin-left: 20%;
