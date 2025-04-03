@@ -24,8 +24,8 @@
                 //Pause: Türrahmen-Bumper Programmieren
                 "08": "/Präsentation NXT/8 - Bumper/Bumper.pdf",
                 "09": "/Präsentation NXT/9 - Ultraschall/Ultraschall.pdf",
-                "10": "/Präsentation NXT/10 - IntToStr/IntToStr.pdf",
-                "11": "/Präsentation NXT/11 - Variablen/Variablen.pdf",
+                "10": "/Präsentation NXT/10 - Variablen/Variablen.pdf",
+                "11": "/Präsentation NXT/11 - IntToStr/IntToStr.pdf",
             };
             // Extract query string manually (everything after '?')
             const queryString = window.location.search.slice(1); // Removes the `?`
@@ -46,6 +46,7 @@
         </div>
         <div id="mainbody">
             <div id="grid">
+                <!--User Guide-->
                 <a class="gridpart" href="?00">
                     <div class="cover">
                         <img src="/NXT_User_Guide.png">
@@ -57,6 +58,7 @@
                         ---
                     </div>
                 </a>
+                <!--Einführung-->
                 <a class="gridpart" href="?01">
                     <div class="cover">
                         <img src="/Präsentation NXT/1 - Einführung/Einführung(Kl.4).png">
@@ -68,6 +70,7 @@
                         06.12.2024
                     </div>
                 </a>
+                <!--Fahren-->
                 <a class="gridpart" href="?02">
                     <div class="cover">
                         <img src="/Präsentation NXT/2 - Fahren/FahrenBG.png">
@@ -79,6 +82,7 @@
                         13.12.2024
                     </div>
                 </a>
+                <!--Sound-->
                 <a class="gridpart" href="?03">
                     <div class="cover">
                         <img src="/Präsentation NXT/3 - Sound/Sound.png">
@@ -90,6 +94,7 @@
                         10.01.2025
                     </div>
                 </a>
+                <!--Image-->
                 <a class="gridpart" href="?04">
                     <div class="cover">
                         <img src="/Präsentation NXT/4 - Display/AnzeigeBG.png">
@@ -101,6 +106,7 @@
                         21.03.2025
                     </div>
                 </a>
+                <!--Button-->
                 <a class="gridpart" href="?05">
                     <div class="cover">
                         <img src="/Präsentation NXT/5 - Knopf/KnopfBG.png">
@@ -112,9 +118,10 @@
                         28.03.2025
                     </div>
                 </a>
-                <a class="gridpart disabled" href="?06">
+                <!--Time-->
+                <a class="gridpart" href="?06">
                     <div class="cover">
-                        <img src="">
+                        <img src="/Präsentation NXT/6 - Warten/ZeitBG.png">
                     </div>
                     <div class="name">
                         06 - Warten
@@ -123,6 +130,7 @@
                         04.04.2025
                     </div>
                 </a>
+                <!--Loop-->
                 <a class="gridpart disabled" href="?07">
                     <div class="cover">
                         <img src="">
@@ -134,15 +142,52 @@
                         11.04.2025
                     </div>
                 </a>
+                <!--Bumper-->
                 <a class="gridpart disabled" href="?08">
                     <div class="cover">
                         <img src="">
                     </div>
                     <div class="name">
-                        08 - komplexes Programm
+                        08 - Bumper
                     </div>
                     <div class="datum">
                         02.05.2025
+                    </div>
+                </a>
+                <!--Ultrasonic-->
+                <a class="gridpart disabled" href="?09">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        09 - Ultraschall
+                    </div>
+                    <div class="datum">
+                        09.05.2025
+                    </div>
+                </a>
+                <!--Variable-->
+                <a class="gridpart disabled" href="?10">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        10 - Komplexes Programmieren - Variablen
+                    </div>
+                    <div class="datum">
+                        16.05.2025
+                    </div>
+                </a>
+                <!--IntToStr-->
+                <a class="gridpart disabled" href="?11">
+                    <div class="cover">
+                        <img src="">
+                    </div>
+                    <div class="name">
+                        11 - Komplexes Programmieren - IntToStr
+                    </div>
+                    <div class="datum">
+                        23.05.2025
                     </div>
                 </a>
             </div>
