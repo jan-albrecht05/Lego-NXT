@@ -11,8 +11,8 @@ body{
     margin-bottom: 2rem;
 }
 img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 a{
     color: black;
@@ -40,28 +40,38 @@ a{
     align-items: center;
 }
 #grid{
-    width: 92%;
+    width:90%;
     margin-top: 2rem;
+    margin-inline: auto;
+    padding-left: 5%;
     display: grid;
-    grid-gap: 4rem;
+    grid-gap: space-between;
 }
 .gridpart{
     width: 80%;
-    height: auto;
+    height: max-content;
     border-radius: 5px;
     border: solid black 2px;
     background-color: white;
     transition: all .3s;
     z-index:2;
+    margin-bottom: 3rem
 }
 .gridpart:hover{
-    filter: drop-shadow(0px 0px 10px #313131);
+    filter: drop-shadow(0px 0px 10px #666666);
     z-index:2;
 }
 .gridpart .cover{
-    height: 15rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
     overflow: hidden;
-    padding: .2rem
+    border-radius: 5px 5px 0 0;
+}
+.gridpart .cover img{
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
 }
 .gridpart.disabled{
     pointer-events: none;
@@ -120,22 +130,10 @@ a{
     #grid {
       grid-template-columns: repeat(3, 1fr);
     }
-    .gridpart{
-        width: 100%;
-    }
-    .gridpart .cover{
-        height: 18.5rem;
-    }
 }
 @media (max-width: 1500px) {
     #grid {
       grid-template-columns: repeat(3, 1fr);
-    }
-    .gridpart{
-        width: 100%;
-    }
-    .gridpart .cover{
-        height: 8rem;
     }
 }
 @media (min-width: 900px) {
@@ -153,22 +151,12 @@ a{
       grid-template-columns: repeat(2, 1fr);
     }
     .gridpart{
-        width: 100%;
-    }
-    .gridpart .cover{
-        height: 8rem;
+        margin-bottom: 1.5rem;
+        width: 90%;
     }
 }
 @media (max-width: 500px) {
-    
     #grid {
       grid-template-columns: repeat(1, 1fr);
-    }
-    .gridpart{
-        width: 90%;
-        margin-inline: auto;
-    }
-    .gridpart .cover{
-        height: 10rem;
     }
 }
